@@ -5,9 +5,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '20373203'))
+API_HASH = environ.get('API_HASH', '8962717c7c708e210f66ea658db58d85')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7393513769:AAGRttVn6-EXPI5GdRpeepDpXjnnU_ukqME")
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -23,14 +23,14 @@ else:
 URL = environ.get("URL", "")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002380048510'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vevob65684:CBT55WcRjWUf0GvN@cluster0.dfd6s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "vevob65684")
 
 # Shortlink Info
 SHORTLINK = bool(environ.get('SHORTLINK', True)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.shareus.io')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'hRPS5vvZc0OGOEUQJMJzPiojoVK2')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'yamlinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '8072a4481a986eacede69f69c22ef754ba3e2986')
